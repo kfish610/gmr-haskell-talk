@@ -1,0 +1,36 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b1c6d97be56a2df11983a004c7db5423a1d1acf3d25efaffdf333cbf4f9ccbda
+
+name:           data-types
+version:        0.1.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      DataTypes
+  other-modules:
+      Paths_data_types
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite data-types-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_data_types
+  hs-source-dirs:
+      test
+  build-depends:
+      base >=4.7 && <5
+    , data-types
+    , hspec
+  default-language: Haskell2010
