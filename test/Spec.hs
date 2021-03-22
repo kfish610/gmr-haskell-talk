@@ -1,7 +1,5 @@
-import           DataTypes                      ( bool
-                                                , floating
-                                                , integer
-                                                )
+import           BasicTypes (bool, char, floating, integer, string, tuple)
+
 import           Test.Hspec
 
 main :: IO ()
@@ -13,8 +11,14 @@ spec = do
     it "is defined" $ integer `seq` canShowValueOf integer
   describe "floating" $ do
     it "is defined" $ floating `seq` canShowValueOf floating
+  describe "char" $ do
+    it "is defined" $ char `seq` canShowValueOf char
   describe "bool" $ do
     it "is defined" $ bool `seq` canShowValueOf bool
+  describe "string" $ do
+    it "is defined" $ string `seq` canShowValueOf string
+  describe "tuple" $ do
+    it "is defined" $ tuple `seq` canShowValueOf tuple
 
 canShowValueOf :: (Show a) => a -> Expectation
 canShowValueOf x = do

@@ -5,7 +5,7 @@ dependencies:
   - base >= 4.7 && < 5
 
 library:
-  exposed-modules: DataTypes
+  exposed-modules: BasicTypes
   source-dirs: src
   ghc-options: -Wall
 
