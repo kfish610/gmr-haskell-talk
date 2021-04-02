@@ -1,12 +1,19 @@
 module Lists where
-  
-import Prelude hiding (elem, map, filter, take, takeWhile, foldl, foldr)
 
---returns true if the value is an element of the list (Linq Contains)
+import           Prelude                 hiding ( elem
+                                                , filter
+                                                , foldl
+                                                , foldr
+                                                , map
+                                                , take
+                                                , takeWhile
+                                                )
+
+-- Returns true if the value is an element of the list (LINQ Contains)
 elem :: (Eq a) => a -> [a] -> Bool
 elem = undefined
 
---calls the function on each element of the input list and returns the outputs as a list (Linq Select)
+-- Calls the function on each element of the input list and returns the outputs as a list (LINQ Select)
 map :: (a -> b) -> [a] -> [b]
 map = undefined
 

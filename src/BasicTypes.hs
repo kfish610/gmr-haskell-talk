@@ -42,9 +42,18 @@ floating = undefined
 -- Case Conversion
 -- toUpper :: Char -> Char
 -- toLower :: Char -> Char
-
 char :: Char
 char = undefined
+
+-- A 'Maybe a' can either be 'Just value' where value is of type a or 'Nothing' (similar-ish to a nullable type).
+-- For example, a Maybe Int can be 'Just 1', 'Just 50', 'Nothing', etc.
+
+-- This won't be useful to you, but is useful to know. It returns the default value in the case of Nothing, and the inside value in the case of a Just
+-- fromMaybe :: a -> Maybe a -> a
+
+-- Play around with other types than Int maybe? (no pun intended)
+maybe' :: Maybe Int
+maybe' = undefined
 
 -- The are really only three main functions both operating on and returning bool:
 
@@ -65,6 +74,10 @@ char = undefined
 -- isSpace :: Char -> Bool
 -- isLower :: Char -> Bool
 -- isUpper :: Char -> Bool
+
+-- Operation on Maybe
+-- isJust :: Maybe a -> Bool
+-- isNothing :: Maybe a -> Bool
 bool :: Bool
 bool = undefined
 
@@ -76,14 +89,7 @@ string = undefined
 -- A tuple can be any two (or more) types, and there are two functions to help you access the items.
 -- fst :: (a, b) -> a
 -- snd :: (a, b) -> b
+
+-- Try any two types for the tuple
 tuple :: (String, Int)
 tuple = undefined
-
-
---A 'Maybe a' can either be 'Just value' where value is of type a or 'Nothing' (similar-ish to a nullable type).
---For example, a Maybe Int can be 'Just 1', 'Just 50', 'Nothing', etc.
---isJust :: Maybe a -> Bool
---isNothing :: Maybe a -> Bool
---fromMaybe :: a -> Maybe a -> a
-maybe' :: Maybe Int
-maybe' = undefined

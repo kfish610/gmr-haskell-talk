@@ -1,38 +1,40 @@
 module CustomTypes where
 
+-- Either Spades, Clubs, Hearts, or Diamonds
+data Suit = Spades
+          | Clubs
+          | Hearts
+          | Diamonds
 
---Card type: either a PlayingCard with a Suit and a Rank or a Joker
---Rank type: either a NumberCard with an Int representing the value or an Ace or Jack or Queen or King
---Suit type: either a Spade, Club, Heart, or Diamond
+-- Either a NumberCard with an Int representing the card value or a face card: an Ace, Jack, Queen or King
+data Rank = NumberCard Int
+          | Jack
+          | Queen
+          | King
+          | Ace
 
-data Suit = Spade
-            | Club
-            | Heart
-            | Diamond
+-- Either a PlayingCard with a Rank and a Suit or a Joker
+data Card = PlayingCard Rank Suit | Joker
 
-data Rank = NumberCard Int 
-            | Ace
-            | Jack 
-            | Queen 
-            | King
-
-data Card = PlayingCard Suit Rank | Joker
-
---True if the playing card is a Joker
+-- True if the playing card is a Joker
 isJoker :: Card -> Bool
 isJoker = undefined
 
---True if the playing card is Red (Heart/Diamond)
+-- True if the playing card is Red (Heart/Diamond)
 isRed :: Card -> Bool
 isRed = undefined
 
---Return the value of the card (Ace=1, Number Card=Value, Jack=11, Queen=12, King=13)
+-- True if the playing card is a Jack, a Queen, a King, or an Ace
+isFaceCard :: Card -> Bool
+isFaceCard = undefined
+
+-- Return the value of the card (Ace=1, Number Card=Value, Jack=11, Queen=12, King=13)
 getValue :: Card -> Int
 getValue = undefined
 
 --Print out a formatted version of the card. For example,
 --Joker -> "Joker"
---PlayingCard Spade (NumberCard 5) -> "5 of Spades"
---PlayingCard Heart Ace            -> "Ace of Hearts"
+--PlayingCard (NumberCard 5) Spade -> "5 of Spades"
+--PlayingCard Ace            Heart -> "Ace of Hearts"
 showCard :: Card -> String
 showCard = undefined

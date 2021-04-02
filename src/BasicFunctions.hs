@@ -1,17 +1,17 @@
 module BasicFunctions where
 
---takes in an int and returns the value doubled
+-- Takes in an int and doubles it
 double :: Int -> Int
-double = undefined
+double x = undefined
 
---takes in three integers and sums them together
+-- Takes in three integers and sums them together
 sumThree :: Int -> Int -> Int -> Int
-sumThree = undefined
+sumThree x y z = undefined
 
---double the int if the bool is true, otherwise return the input as normal
+-- Double the integer if the boolean is true, otherwise return the integer as normal
 doubleIfTrue :: Int -> Bool -> Int
-doubleIfTrue = undefined
+doubleIfTrue x p = undefined
 
---you know what this one does
+-- You can guess what this one does
 absoluteVal :: Int -> Int
-absoluteVal = undefined
+absoluteVal x = undefined

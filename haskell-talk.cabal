@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 58762d7c7509b05a5fa363b51577dc026208e5023a53abceca8b0e20b2cad696
+-- hash: eba4ec55c493a3580fd91d7242eed055a9a66930ae41cdb31f56b87a245d22e9
 
 name:           haskell-talk
 version:        0.1.0.0
@@ -31,6 +31,7 @@ test-suite data-types-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      BasicTypesSpec
       Paths_haskell_talk
   hs-source-dirs:
       test
