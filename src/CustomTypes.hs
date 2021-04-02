@@ -27,7 +27,6 @@ isRed :: Card -> Bool
 --Return the value of the card (Ace=1, Number Card=Value, Jack=11, Queen=12, King=13)
 getValue :: Card -> Int
 
-
 --Print out a formatted version of the card. For example,
 --Joker -> "Joker"
 --PlayingCard Spade (NumberCard 5) -> "5 of Spades"

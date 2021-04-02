@@ -4,7 +4,7 @@ import           Data.Char
 
 --takes in an int and returns the value doubled
 double :: Int -> Int
-
+    
 --takes in three integers and sums them together
 sumThree :: Int -> Int -> Int -> Int
 

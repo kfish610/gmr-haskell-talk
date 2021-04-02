@@ -24,3 +24,6 @@ foldl' :: (b -> a -> b) -> b -> [a] -> b
 --what could be some advantages of using one or the other?
 foldr' :: (a -> b -> b) -> b -> [a] -> b
 
+--find and return the first value in the list which matches the predicate
+--if no value is found, return Nothing
+find :: (a -> Bool) -> [a] -> Maybe a

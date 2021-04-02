@@ -1,5 +1,10 @@
 module Zoo where
 
+--Define animal type which is either a Cat or a Giraffe
+--Cat has a name and a chonkiness level
+--Giraffe has a neck length
+
+
 --Either "Meow" or "... Giraffes don't make sounds"
 makeSound :: Animal -> String
 

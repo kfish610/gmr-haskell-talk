@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 59d045424a8b14ed58098ac325c1fad86d780d3686cad606f6e737f92ec3e48e
+-- hash: 206b2a92467577d18224eba67937858e6e09d708f8438b949faf47c60696852f
 
 name:           data-types
 version:        0.1.0.0
@@ -15,6 +15,7 @@ library
       BasicTypes
   other-modules:
       BasicFunctions
+      BinarySearchTree
       CustomTypes
       Lists
       Recursion
