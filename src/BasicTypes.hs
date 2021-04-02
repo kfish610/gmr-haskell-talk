@@ -5,6 +5,7 @@ module BasicTypes
     , bool
     , string
     , tuple
+    , maybe'
     ) where
 
 import           Data.Char
@@ -27,7 +28,7 @@ import           Data.Char
 -- rem :: Int -> Int -> Int
 -- mod :: Int -> Int -> Int
 
--- Try changing Int to Integer, then try to make the number too large. Do it. I dare you.
+-- Try changing Int to Integer, then try to make the number overflow. Do it. I dare you.
 integer :: Int
 integer = undefined
 
@@ -83,5 +84,14 @@ string = undefined
 -- A tuple can be any two (or more) types, and there are two functions to help you access the items.
 -- fst :: (a, b) -> a
 -- snd :: (a, b) -> b
-tuple :: (Show a, Show b) => (a, b)
+tuple :: (type1, type2)
 tuple = undefined
+
+
+--A 'Maybe a' can either be 'Just value' where value is of type a or 'Nothing' (similar-ish to a nullable type).
+--For example, a Maybe Int can be 'Just 1', 'Just 50', 'Nothing', etc.
+--isJust :: Maybe a -> Bool
+--isNothing :: Maybe a -> Bool
+--fromMaybe :: a -> Maybe a -> a
+maybe' :: Maybe type
+maybe' = undefined

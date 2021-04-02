@@ -1,4 +1,4 @@
-import           BasicTypes (bool, char, floating, integer, string, tuple)
+import           BasicTypes (bool, char, floating, integer, string, tuple, maybe')
 
 import           Test.Hspec
 
@@ -19,6 +19,8 @@ spec = do
     it "is defined" $ string `seq` canShowValueOf string
   describe "tuple" $ do
     it "is defined" $ tuple `seq` canShowValueOf tuple
+  describe "maybe" $ do
+    it "is defined" $ maybe' `seq` canShowValueOf maybe'
 
 canShowValueOf :: (Show a) => a -> Expectation
 canShowValueOf x = do
