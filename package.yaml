@@ -1,11 +1,17 @@
-name: data-types
+name: haskell-talk
 version: 0.1.0.0
 
 dependencies:
   - base >= 4.7 && < 5
 
 library:
-  exposed-modules: BasicTypes
+  exposed-modules:
+    - BasicTypes
+    - BasicFunctions
+    - CustomTypes
+    - Lists
+    - Recursion
+    - Zoo
   source-dirs: src
   ghc-options: -Wall
 
@@ -14,5 +20,5 @@ tests:
     main: Spec.hs
     source-dirs: test
     dependencies:
-      - data-types
+      - haskell-talk
       - hspec

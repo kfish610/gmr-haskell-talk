@@ -1,12 +1,4 @@
-module BasicTypes
-    ( integer
-    , floating
-    , char
-    , bool
-    , string
-    , tuple
-    , maybe'
-    ) where
+module BasicTypes where
 
 import           Data.Char
 
@@ -84,7 +76,7 @@ string = undefined
 -- A tuple can be any two (or more) types, and there are two functions to help you access the items.
 -- fst :: (a, b) -> a
 -- snd :: (a, b) -> b
-tuple :: (type1, type2)
+tuple :: (String, Int)
 tuple = undefined
 
 
@@ -93,5 +85,5 @@ tuple = undefined
 --isJust :: Maybe a -> Bool
 --isNothing :: Maybe a -> Bool
 --fromMaybe :: a -> Maybe a -> a
-maybe' :: Maybe type
+maybe' :: Maybe Int
 maybe' = undefined

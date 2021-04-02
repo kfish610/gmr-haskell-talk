@@ -4,23 +4,27 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
+<<<<<<< HEAD:data-types.cabal
 -- hash: 206b2a92467577d18224eba67937858e6e09d708f8438b949faf47c60696852f
+=======
+-- hash: 58762d7c7509b05a5fa363b51577dc026208e5023a53abceca8b0e20b2cad696
+>>>>>>> 32578128f744da8e967d48000f036b9aefd743ee:haskell-talk.cabal
 
-name:           data-types
+name:           haskell-talk
 version:        0.1.0.0
 build-type:     Simple
 
 library
   exposed-modules:
       BasicTypes
-  other-modules:
       BasicFunctions
       BinarySearchTree
       CustomTypes
       Lists
       Recursion
       Zoo
-      Paths_data_types
+  other-modules:
+      Paths_haskell_talk
   hs-source-dirs:
       src
   ghc-options: -Wall
@@ -32,11 +36,11 @@ test-suite data-types-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_data_types
+      Paths_haskell_talk
   hs-source-dirs:
       test
   build-depends:
       base >=4.7 && <5
-    , data-types
+    , haskell-talk
     , hspec
   default-language: Haskell2010
