@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: eba4ec55c493a3580fd91d7242eed055a9a66930ae41cdb31f56b87a245d22e9
+-- hash: d7565f07eac99d47ca0d93b86f27c668e97e8a18888897cf3cbf9a1a3a75a37e
 
 name:           haskell-talk
 version:        0.1.0.0
@@ -19,6 +19,8 @@ library
       Recursion
       Zoo
   other-modules:
+      BattleZoo
+      BST
       Paths_haskell_talk
   hs-source-dirs:
       src
