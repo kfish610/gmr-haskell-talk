@@ -7,6 +7,7 @@ import           Prelude                 hiding ( elem
                                                 , map
                                                 , take
                                                 , takeWhile
+                                                , zip
                                                 )
 
 -- Returns true if the value is an element of the list (LINQ Contains)
@@ -35,6 +36,8 @@ takeWhile = undefined
 --if the lists are different sizes, ignore all elements in the long list after the last element of the shorter one
 zip :: [a] -> [b] -> [(a, b)]
 zip = undefined
+
+--also note the similar function zipWith which takes a function for how to combine the two values (Linq Zip)
 
 --runs through the list from left to right applying the function to the current value and some aggragate value (Linq Aggregate)
 foldl :: (b -> a -> b) -> b -> [a] -> b
