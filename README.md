@@ -1,1 +1,1 @@
-# data-types
+# Haskell Talk

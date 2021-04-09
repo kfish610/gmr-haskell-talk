@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8df47a4d866baac47a5581b586af78f03f459d61280d751e0e990c40c6ceda23
+-- hash: 4b18731c898de61e91057ae05c5bbb9d22fdccea808237f09d95613c86bcbfda
 
 name:           haskell-talk
 version:        0.1.0.0
@@ -29,7 +29,7 @@ library
       base >=4.7 && <5
   default-language: Haskell2010
 
-test-suite data-types-test
+test-suite haskell-talk-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:

@@ -1,18 +1,12 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Test",
-            "command": "stack test",
-            "type": "shell",
-            "args": [],
-            "presentation": {
-                "reveal": "always"
-            },
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            }
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Basic Types Test",
+      "type": "shell",
+      "command": "stack",
+      "args": ["test", "--test-arguments='-m \"/basic types/\"'"],
+      "problemMatcher": []
+    }
+  ]
 }
