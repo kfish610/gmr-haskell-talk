@@ -19,6 +19,8 @@ library
       Lists
       Zoo
   other-modules:
+      BattleZoo
+      BST
       Paths_haskell_talk
   hs-source-dirs:
       src
