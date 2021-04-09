@@ -9,8 +9,8 @@ library:
     - BasicTypes
     - BasicFunctions
     - CustomTypes
-    - Lists
     - Recursion
+    - Lists
     - Zoo
   source-dirs: src
   ghc-options: -Wall

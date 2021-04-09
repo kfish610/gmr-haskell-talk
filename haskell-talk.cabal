@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: eba4ec55c493a3580fd91d7242eed055a9a66930ae41cdb31f56b87a245d22e9
+-- hash: 8df47a4d866baac47a5581b586af78f03f459d61280d751e0e990c40c6ceda23
 
 name:           haskell-talk
 version:        0.1.0.0
@@ -15,8 +15,8 @@ library
       BasicTypes
       BasicFunctions
       CustomTypes
-      Lists
       Recursion
+      Lists
       Zoo
   other-modules:
       Paths_haskell_talk
