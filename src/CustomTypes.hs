@@ -32,9 +32,9 @@ isFaceCard = undefined
 getValue :: Card -> Int
 getValue = undefined
 
---Print out a formatted version of the card. For example,
---Joker -> "Joker"
---PlayingCard (NumberCard 5) Spade -> "5 of Spades"
---PlayingCard Ace            Heart -> "Ace of Hearts"
+-- Print out a formatted version of the card. For example,
+-- Joker -> "Joker"
+-- PlayingCard (NumberCard 5) Spade -> "5 of Spades"
+-- PlayingCard Ace            Heart -> "Ace of Hearts"
 showCard :: Card -> String
 showCard = undefined
