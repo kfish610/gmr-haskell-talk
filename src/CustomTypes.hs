@@ -1,13 +1,20 @@
 module CustomTypes where
 
 -- Either Spades, Clubs, Hearts, or Diamonds
-data Suit = Suit
+data Suit = Spades
+          | Clubs
+          | Hearts
+          | Diamonds
 
 -- Either a NumberCard with an Int representing the card value or a face card: an Ace, Jack, Queen or King
-data Rank = Rank
+data Rank = NumberCard Int
+          | Jack
+          | Queen
+          | King
+          | Ace
 
 -- Either a PlayingCard with a Rank and a Suit or a Joker
-data Card = Card
+data Card = PlayingCard Rank Suit | Joker
 
 -- True if the playing card is a Joker
 isJoker :: Card -> Bool
