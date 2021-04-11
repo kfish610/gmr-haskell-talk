@@ -69,6 +69,7 @@ maybe' = undefined
 -- (<) :: Int -> Int -> Bool
 -- (<=) :: Int -> Int -> Bool
 -- (==) :: Int -> Int -> Bool
+-- (/=) :: Int -> Int -> Bool
 
 -- Character Classification
 -- isSpace :: Char -> Bool

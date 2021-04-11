@@ -1,7 +1,14 @@
 module Lists where
 
-import           Prelude hiding (elem, filter, foldl, foldr, map, take,
-                          takeWhile, zip)
+import           Prelude                 hiding ( elem
+                                                , filter
+                                                , foldl
+                                                , foldr
+                                                , map
+                                                , take
+                                                , takeWhile
+                                                , zip
+                                                )
 
 -- Returns true if the value is an element of the list (LINQ Contains)
 elem :: (Eq a) => a -> [a] -> Bool
@@ -43,7 +50,7 @@ zip = undefined
 
 
 
--- Runs through the list from left to right applying the function to the current value and some aggragate value (LINQ Aggregate)
+-- Runs through the list from left to right applying the function to the current value and some aggregate value (LINQ Aggregate)
 foldl :: (b -> a -> b) -> b -> [a] -> b
 foldl = undefined
 
@@ -62,11 +69,11 @@ find = undefined
 
 
 -- Sort a list of values using their Ord comparison using quicksort
--- For simplicity's sake, do not wory about space complexity
+-- For simplicity's sake, do not worry about space complexity
 quicksort :: (Ord a) => [a] -> [a]
 quicksort = undefined
 
 -- Sort a list of values using their Ord comparison using mergesort
--- For simplicity's sake, do not wory about space complexity
+-- For simplicity's sake, do not worry about space complexity
 mergesort :: (Ord a) => [a] -> [a]
 mergesort = undefined

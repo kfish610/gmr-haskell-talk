@@ -1,20 +1,44 @@
 module BST where
 
-data BST a = BST
+data BST a = DefineThis
 
---`singleton` function which takes a value and returns a BST containing just that value
+-- Returns the left subtree if it exists
+left :: BST a -> Maybe (BST a)
+left = undefined
+
+-- Returns the right subtree if it exists
+right :: BST a -> Maybe (BST a)
+right = undefined
+
+-- Returns the value of the node if it exists
+value :: BST a -> Maybe a
+value = undefined
+
+-- Returns the empty BST
+empty :: BST a
+empty = undefined
+
+-- Takes a value and returns a BST containing just that value
 singleton :: a -> BST a
 singleton = undefined
 
---`treeInsert` function which takes a comparable value and a BST and adds that value to the BST
-treeInsert :: (Ord a) => a -> BST a -> BST a
-treeInsert = undefined
+-- Takes a comparable value and a BST and adds that value to the BST
+insert :: (Ord a) => a -> BST a -> BST a
+insert = undefined
 
---`treeElem` function which takes a comparable value and a BST and checks if that value is in the BST
-treeElem :: (Ord a) => a -> BST a -> Bool
-treeElem = undefined
+-- Takes a comparable value and a BST and checks if that value is in the BST
+elem :: (Ord a) => a -> BST a -> Bool
+elem = undefined
 
---`treeRemove` function which takes a comparable value and removes the first instance of that value it finds in the BST
---If it does not find that value, throw an error using `throw "Exception text"`
-treeRemove :: (Ord a) => a -> BST a -> BST a
-treeRemove = undefined
+-- Takes a comparable value and removes the first instance of that value it finds in the BST
+-- If it does not find that value, return it as is
+delete :: (Ord a) => a -> BST a -> BST a
+delete = undefined
+
+-- Takes a list of comparable values and creates a valid BST from it
+fromList :: (Ord a) => [a] -> BST a
+fromList = undefined
+
+-- Flattens the BST into a list
+toList :: BST a -> [a]
+toList = undefined
